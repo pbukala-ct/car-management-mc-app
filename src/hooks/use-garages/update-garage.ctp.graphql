@@ -1,4 +1,4 @@
-mutation CreateOrUpdateBundle($draft: CustomObjectDraft!) {
+mutation UpdateGarage($draft: CustomObjectDraft!) {
   createOrUpdateCustomObject(draft: $draft) {
     id
     key

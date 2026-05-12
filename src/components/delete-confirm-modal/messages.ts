@@ -1,7 +1,7 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  title: { id: 'DeleteConfirmModal.title', defaultMessage: 'Delete Look' },
+  title: { id: 'DeleteConfirmModal.title', defaultMessage: 'Confirm Delete' },
   message: {
     id: 'DeleteConfirmModal.message',
     defaultMessage: 'Are you sure you want to delete "{name}"? This cannot be undone.',

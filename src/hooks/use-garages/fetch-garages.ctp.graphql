@@ -1,0 +1,14 @@
+query FetchGarages($limit: Int!, $offset: Int!) {
+  customObjects(container: "customer-vehicles", limit: $limit, offset: $offset, sort: ["lastModifiedAt desc"]) {
+    count
+    total
+    offset
+    results {
+      id
+      key
+      version
+      value
+      lastModifiedAt
+    }
+  }
+}

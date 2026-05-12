@@ -1,9 +1,0 @@
-query FetchBundle($key: String!) {
-  customObject(container: "shop-the-look", key: $key) {
-    id
-    key
-    version
-    value
-    lastModifiedAt
-  }
-}

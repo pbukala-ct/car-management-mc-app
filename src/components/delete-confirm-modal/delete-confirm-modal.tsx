@@ -4,13 +4,13 @@ import { ConfirmationDialog } from '@commercetools-frontend/application-componen
 import messages from './messages';
 
 type Props = {
-  bundleName: string;
+  itemName: string;
   isOpen: boolean;
   onConfirm: () => void;
   onCancel: () => void;
 };
 
-const DeleteConfirmModal = ({ bundleName, isOpen, onConfirm, onCancel }: Props) => {
+const DeleteConfirmModal = ({ itemName, isOpen, onConfirm, onCancel }: Props) => {
   const intl = useIntl();
   return (
     <ConfirmationDialog
@@ -23,7 +23,7 @@ const DeleteConfirmModal = ({ bundleName, isOpen, onConfirm, onCancel }: Props) 
       labelSecondary={intl.formatMessage(messages.cancel)}
     >
       <p>
-        {intl.formatMessage(messages.message, { name: bundleName })}
+        {intl.formatMessage(messages.message, { name: itemName })}
       </p>
     </ConfirmationDialog>
   );

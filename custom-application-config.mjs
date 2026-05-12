@@ -20,10 +20,10 @@ const config = {
     },
   },
   oAuthScopes: {
-    view: ['view_products'],
+    view: ['view_customers', 'view_key_value_documents'],
     manage: ['manage_key_value_documents'],
   },
-  icon: '${path:@commercetools-frontend/assets/application-icons/bag.svg}',
+  icon: '${path:@commercetools-frontend/assets/application-icons/rocket.svg}',
   mainMenuLink: {
     defaultLabel: 'Car Management',
     labelAllLocales: [],

@@ -1,0 +1,11 @@
+query FetchCustomersByIds($where: String!, $limit: Int!) {
+  customers(where: $where, limit: $limit) {
+    count
+    results {
+      id
+      email
+      firstName
+      lastName
+    }
+  }
+}

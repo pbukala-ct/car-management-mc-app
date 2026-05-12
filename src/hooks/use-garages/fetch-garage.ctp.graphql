@@ -1,0 +1,9 @@
+query FetchGarage($key: String!) {
+  customObject(container: "customer-vehicles", key: $key) {
+    id
+    key
+    version
+    value
+    lastModifiedAt
+  }
+}

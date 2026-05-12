@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react';
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
 import Spacings from '@commercetools-uikit/spacings';
-import BundleList from './components/bundle-list';
-import BundleEditor from './components/bundle-editor';
+import GarageList from './components/garage-list';
+import GarageEditor from './components/garage-editor';
 
 type ApplicationRoutesProps = {
   children?: ReactNode;
@@ -14,14 +14,11 @@ const ApplicationRoutes = (_props: ApplicationRoutesProps) => {
   return (
     <Spacings.Inset scale="l">
       <Switch>
-        <Route exact path={`${match.path}/new`}>
-          <BundleEditor isNew />
-        </Route>
-        <Route path={`${match.path}/:bundleKey`}>
-          <BundleEditor isNew={false} />
+        <Route path={`${match.path}/:customerId`}>
+          <GarageEditor />
         </Route>
         <Route exact path={match.path}>
-          <BundleList />
+          <GarageList />
         </Route>
       </Switch>
     </Spacings.Inset>

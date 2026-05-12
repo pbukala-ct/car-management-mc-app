@@ -1,0 +1,6 @@
+mutation DeleteGarage($key: String!, $version: Long!) {
+  deleteCustomObject(container: "customer-vehicles", key: $key, version: $version) {
+    id
+    key
+  }
+}
