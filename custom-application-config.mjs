@@ -9,7 +9,7 @@ const config = {
   cloudIdentifier: 'gcp-eu',
   env: {
     development: {
-      initialProjectKey: 'pb-demo-jan26',
+      initialProjectKey: 'toyota-poc',
     },
     production: {
       // Set these in Netlify → Site configuration → Environment variables.
