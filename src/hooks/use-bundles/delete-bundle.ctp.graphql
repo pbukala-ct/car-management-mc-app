@@ -1,0 +1,6 @@
+mutation DeleteBundle($key: String!, $version: Long!) {
+  deleteCustomObject(container: "shop-the-look", key: $key, version: $version) {
+    id
+    key
+  }
+}

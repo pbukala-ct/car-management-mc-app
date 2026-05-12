@@ -1,0 +1,15 @@
+[build]
+  # Build the React bundle then compile the index.html with correct CSP headers
+  command = "yarn build && yarn compile-html"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # Tells mc-scripts compile-html to use the production config block
+  MC_APP_ENV = "production"
+
+# SPA fallback — all paths serve index.html for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

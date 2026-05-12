@@ -1,0 +1,27 @@
+import { defineMessages } from 'react-intl';
+
+export default defineMessages({
+  createTitle: { id: 'BundleEditor.createTitle', defaultMessage: 'Create New Look' },
+  editTitle: { id: 'BundleEditor.editTitle', defaultMessage: 'Edit Look' },
+  fieldName: { id: 'BundleEditor.field.name', defaultMessage: 'Name' },
+  fieldNameHint: { id: 'BundleEditor.field.name.hint', defaultMessage: 'Required. Max 255 characters.' },
+  fieldDescription: { id: 'BundleEditor.field.description', defaultMessage: 'Description' },
+  fieldDescriptionHint: { id: 'BundleEditor.field.description.hint', defaultMessage: 'Optional. Max 1000 characters.' },
+  fieldStatus: { id: 'BundleEditor.field.status', defaultMessage: 'Status' },
+  statusActive: { id: 'BundleEditor.status.active', defaultMessage: 'Active' },
+  statusDraft: { id: 'BundleEditor.status.draft', defaultMessage: 'Draft' },
+  save: { id: 'BundleEditor.save', defaultMessage: 'Save' },
+  cancel: { id: 'BundleEditor.cancel', defaultMessage: 'Cancel' },
+  delete: { id: 'BundleEditor.delete', defaultMessage: 'Delete' },
+  unsavedChanges: { id: 'BundleEditor.unsavedChanges', defaultMessage: 'You have unsaved changes. Are you sure you want to leave?' },
+  nameRequired: { id: 'BundleEditor.validation.nameRequired', defaultMessage: 'Name is required' },
+  nameTooLong: { id: 'BundleEditor.validation.nameTooLong', defaultMessage: 'Name must be 255 characters or fewer' },
+  descriptionTooLong: { id: 'BundleEditor.validation.descriptionTooLong', defaultMessage: 'Description must be 1000 characters or fewer' },
+  saveSuccess: { id: 'BundleEditor.saveSuccess', defaultMessage: 'Look saved successfully' },
+  saveError: { id: 'BundleEditor.saveError', defaultMessage: 'Failed to save the look. Please try again.' },
+  deleteError: { id: 'BundleEditor.deleteError', defaultMessage: 'Failed to delete the look. Please try again.' },
+  productsTitle: { id: 'BundleEditor.products.title', defaultMessage: 'Selected Products' },
+  productsEmpty: { id: 'BundleEditor.products.empty', defaultMessage: 'No products added yet.' },
+  productRemove: { id: 'BundleEditor.products.remove', defaultMessage: 'Remove' },
+  productSelectVariant: { id: 'BundleEditor.products.selectVariant', defaultMessage: 'Select Variant' },
+});
